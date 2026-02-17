@@ -70,7 +70,7 @@ From the repository root:
 
 ```bash
 cd Caesar_Script
-python3 caesar_cipher.py
+py caesar_cipher.py
 ```
 
 Example interaction:
@@ -93,8 +93,18 @@ Run them with:
 
 ```bash
 cd Caesar_Script
-python3 -m unittest tests.py
+py -m unittest -v tests.py
 ```
+
+Using `-v` (verbose) prints each test case and whether it passed, which is useful for terminal screenshots as evidence.
+
+If you want a more explicit evidence-style report (inputs, expected value, actual value, pass/fail per case) **without creating extra files**, run:
+
+```bash
+cd Caesar_Script
+py tests.py --report
+```
+
 
 The test suite covers:
 
